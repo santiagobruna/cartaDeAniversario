@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-de-fundo: #F0997D;
+    --cor-do-menu: #A75D5D;
+    --cor-secundaria: #000000;
+    --cor-do-textos: #DF2E38;
+    --efeito-hover: #FFC3A1;
+    --fonte-principal: 'Montserrat', sans-serif;
+    /* font-weigth: 100, 500*/
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+  
+}
+
+.navegacao {
+    background-color: var(--cor-do-menu);
+   
+}
+
+.navegacao__lista {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1em 0;
+
+    
+}
+
+.navegacao__lista__link a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin-left: 39px;
+}
+
+
+.navegacao__lista__link a:hover{
+    text-decoration: none;
+    color: var(--efeito-hover);
+}
+
+/* Formatação principal */
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    height: 100vh;
+}   
+.principal {
+    margin: 0 10em;
+    text-align: center;
+    align-items: center;
+    background-size: contain;
+}
+.container__imagens {
+    margin: 2em 0 2em 20em;
+    border: 3px solid var(--cor-do-menu);
+    width: 40vh;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.descricao__texto {
+    margin: 25px 0;
+    color: var(--cor-do-textos);
+    font-size: 1.5em;
+}
+
+.descricao__titulo {
+    color: var(--cor-do-textos);
+    font-size: 1.8em;
+}
+.descricao__carta {
+    margin: 25px 15px;
+    color: var(--cor-do-textos);
+    font-size: 1.2em;
+    text-align: justify;
+}
+.fotos {
+    text-align: center;
+    align-items: center;
+}
+.fotos__titulo {
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #DF2E38;
+}
+.fotos__lista { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.fotos__lista__img {
+    border: 3px solid var(--cor-do-textos);
+    margin: 2em 7em;
+    width: 40vh;
+}
+
+.rodape {
+    text-align: center;
+    background-color: #A75D5D;
+    padding: 20px;
+}
+
+.rodape__texto {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+    .container__imagens {
+        margin: 0;
+    }
+    .principal {
+        margin: 0;
+    }
+
+    .descricao__texto {
+        font-size: 1.4em;
+    }
+    
+    .navegacao__lista {
+        font-size: 1.2em;
+    }
+
+    .fotos__lista {
+        display: block;
+    }
+    .fotos__titulo{
+        
+        margin-top: 100px;
+        font-size: 1.5em;
+    }
+    
+    .fotos__lista__img {
+        margin: 2em 1em;
+        width: 40vh;    
+    }
+}
