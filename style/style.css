@@ -80,6 +80,7 @@ body {
 .descricao__titulo {
     color: var(--cor-do-textos);
     font-size: 1.8em;
+    margin-top: 19px;
 }
 .descricao__carta {
     margin: 25px 15px;
