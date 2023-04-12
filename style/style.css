@@ -67,10 +67,6 @@ body {
     width: 40vh;
 }
 
-.container__caixa {
-    margin: 0 6em;
-}
-
 .descricao__texto {
     margin: 25px 0;
     color: var(--cor-do-textos);
@@ -119,6 +115,12 @@ body {
 .rodape__texto {
     font-size: 1.2em;
 }
+iframe {
+    width: 450px;
+    height: 310px;
+    
+    margin: 2em 0 2em 20em;
+}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -152,4 +154,12 @@ body {
         margin: 2em 1em;
         width: 40vh;    
     }
+
+    
+    iframe {
+        width: 350px;
+        height: 290px;
+        margin: 1em 0.3em;
+    }
+
 }
