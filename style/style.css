@@ -115,10 +115,9 @@ body {
 .rodape__texto {
     font-size: 1.2em;
 }
+
 iframe {
-    width: 450px;
-    height: 310px;
-    margin: 2em 0 2em 10em;
+    margin: 0 17em;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,8 +158,7 @@ iframe {
 
     iframe {
         width: 100%;
-        height: 300px;
-        margin: 6em 1em;
+        margin: 0;
     }
 
 }
@@ -175,10 +173,11 @@ iframe {
 
     iframe {
         width: 100%;
-        height: 300px;
+        margin: 0;
     }
     
     .container__imagens {
-        margin: 2em 0 2em 0em;
+        margin: 0;
+        display: block;
     }
 }
